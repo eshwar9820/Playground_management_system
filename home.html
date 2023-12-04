@@ -25,15 +25,19 @@
     <main class="container mt-4">
         <section id="reservation-form" class="border p-4 bg-light">
             <h2>Make a Reservation</h2>
-            <form class="/" method="post">
+            <form action="/home" method="post">
+                <div class="form-group">
+                    <label>Student ID</label>
+                    <input type="text" name="Student_id">
+                </div>
                 <div class="form-group">
                     <label>Name</label>
-                    <input type="text" name="name">
+                    <input type="text" name="game_name">
                 </div>
                 <!-- Bootstrap form elements -->
                 <div class="form-group">
                     <label for="playground">Select Playground:</label>
-                    <select class="form-control" id="playground" name="playground">
+                    <select class="form-control" id="playground" name="playground_venue">
                         <option value="1" name="opt1">NIT Main Playground</option>
                         <option value="2" name="opt2">NIT Back Ground</option>
                         <option value="3" name="opt3">NSO Ground</option>
@@ -42,26 +46,18 @@
                 </div>
                 <div class="form-group">
                     <label for="date" >Date:</label>
-                    <input type="date" class="form-control" id="date" name="date" name="date">
+                    <input type="date" class="form-control" id="date" name="date">
                 </div>
                 <div class="form-group">
                     <label for="start-time">Start Time:</label>
-                    <input type="time" class="form-control" id="start-time" name="start-time">
+                    <input type="time" class="form-control" id="start-time" name="start_time">
                 </div>
                 <div class="form-group">
                     <label for="end-time">End Time:</label>
-                    <input type="time" class="form-control" id="end-time" name="end-time">
+                    <input type="time" class="form-control" id="end-time" name="end_time">
                 </div>
                 <button type="submit" class="btn btn-primary" name="submit">Submit Reservation</button>
             </form>
-        </section>
-        <section id="reservation-list">
-            <h2>Your Reservations</h2>
-            <ul class="list-unstyled">
-                <!-- Display user's reservations here -->
-                <li>Reservation 1 - NIT Playground - Date: 2023-09-30, Time: 14:00-16:00</li>
-                <li>Reservation 2 - NIT Back Ground - Date: 2023-10-05, Time: 10:00-12:00</li>
-            </ul>
         </section>
     </main>
     <footer class="mt-4">
@@ -74,3 +70,4 @@
     <script src="scripts.js"></script>
 </body>
 </html>
+
