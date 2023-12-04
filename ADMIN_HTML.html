@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - NIT Playground Management System</title>
+    <link rel="stylesheet" href="admin_styles.css">
+</head>
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Playgrounds</a></li>
+            <li><a href="#">Equipment</a></li>
+            <li><a href="#">Maintenance Requests</a></li>
+            <li><a href="#">User Management</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="playground-management">
+            <h2>Playground Management</h2>
+            <button id="add-playground">Add Playground</button>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Location</th>
+                        <th>Capacity</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Display playgrounds and actions here -->
+                    <tr>
+                        <td>NIT Playground</td>
+                        <td>Campus Center</td>
+                        <td>100</td>
+                        <td>Open</td>
+                        <td>
+                            <button class="edit-playground">Edit</button>
+                            <button class="delete-playground">Delete</button>
+                        </td>
+                    </tr>
+                    <!-- Add more playground rows as needed -->
+                </tbody>
+            </table>
+        </section>
+        <!-- Additional sections for equipment, maintenance requests, and user management -->
+    </main>
+    <footer>
+        <p>&copy; NIT Playground Management System</p>
+    </footer>
+    <script src="admin_scripts.js"></script>
+</body>
+</html>

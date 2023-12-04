@@ -1,0 +1,45 @@
+/* Add your CSS styles here to format the page */
+
+/* For example, style the header */
+header {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+main {
+    margin: 20px;
+}
+
+/* Style the reservation form */
+#reservation-form {
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #f7f7f7;
+    margin-bottom: 20px;
+}
+
+/* Style the reservation list */
+#reservation-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#reservation-list ul li {
+    margin-bottom: 10px;
+}
+
+/* Add more styles as needed */
