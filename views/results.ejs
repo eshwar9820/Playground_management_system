@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playground Reservation Results</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-4">
+  <h2>Playground Reservation Results</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Student ID</th>
+        <th scope="col">Game Name</th>
+        <th scope="col">Start Time</th>
+        <th scope="col">End Time</th>
+        <th scope="col">Date</th>
+        <th scope="col">Ground Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Use a loop to iterate through your resultData array -->
+      <!-- Replace resultData with your actual data array -->
+      <!-- Make sure to adjust the column names accordingly -->
+      <!-- {% for result in resultData %} -->
+      <% resultData.forEach((result) => { %>
+        <tr>
+          <td><%= result.Student_id %></td>
+          <td><%= result.game_name %></td>
+          <td><%= result.start_time %></td>
+          <td><%=result.end_time %></td>
+          <td><%=result.date %></td>
+          <td><%=result.playground_venue %></td>
+        </tr>
+      <% }) %>
+
+      <!-- {% endfor %} -->
+    </tbody>
+  </table>
+</div>
+
+<!-- Bootstrap JS and Popper.js (required for some Bootstrap components) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
